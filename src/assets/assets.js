@@ -120,17 +120,17 @@ export const projects = [
 
 export const teams = [
     {
-        image: "/src/assets/animation.svg",
+        image: "./src/assets/animation.svg",
         title: "Collaboration et travail d'équipe",
         desc: "Nous croyons au pouvoir du collectif. Chez LCSoft, chaque membre de l'équipe est un acteur clé qui contribue à notre réussite."
     },
     {
-        image: "/src/assets/animation-3.svg",
+        image: "./src/assets/animation-3.svg",
         title: "Écoute et adaptation aux besoins",
         desc: "Nous sommes à l’écoute de nos clients et du marché pour comprendre leurs attentes et anticiper leurs besoins."
     },
     {
-        image: "/src/assets/animation-2.svg",
+        image: "./src/assets/animation-2.svg",
         title: "Excellence et Innovation",
         desc: "Nous nous engageons à toujours rechercher l'excellence en offrant des solutions innovantes et sur mesure pour répondre vos besoins."
     }

@@ -15,6 +15,7 @@
     flex-direction: row;
     justify-content: space-between;
     /* margin: 50px 0 30px 0; */
+    margin-bottom: 50px;
     gap: 80px;
 }
 
@@ -58,12 +59,21 @@
 
 .teams-right .title-team h2 {
     font-weight: 600;
+    color: var(--primary);
 }
 
 .team-item-img {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.team-item-img .team-detail h4 {
+    color: var(--primary);
+}
+
+.team-item-img .team-detail .team-item-desc {
+    color: var(--text);
 }
 
 .teams-right li {
