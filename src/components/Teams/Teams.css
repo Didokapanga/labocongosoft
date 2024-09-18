@@ -52,6 +52,10 @@
     line-height: 1.1;
 }
 
+.teams-left .teams-primary-text {
+    color: var(--text);
+}
+
 .teams-right {
     flex: 1;
 }
@@ -177,6 +181,12 @@
     }
 }
 
+@media (max-width:900px) {
+    .teams-right .title-team .h2 {
+        margin-right: 25%;
+    }
+}
+
 @media (max-width:600px) {
     .teams-content {
         flex-direction: column;
@@ -224,6 +234,10 @@
         width: 70px;
         font-size: 14px;
         padding: 6px 30px;
+    }
+
+    .teams-right .title-team .h2 {
+        margin-right: 10%;
     }
 }
 

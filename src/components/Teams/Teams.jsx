@@ -63,7 +63,7 @@ const Teams = () => {
 
                 <div className="teams-right">
                     <span className='title-team secondary-text'>
-                        <h2>Des valeurs fortes nous gouvernent, nous guident et définissent nos choix</h2>
+                        <h2 className='h2'>Des valeurs fortes nous gouvernent, nous guident et définissent nos choix</h2>
                     </span>
                     <ul className='teams-animate-top'>
                         {teams.map((team, index) => (
