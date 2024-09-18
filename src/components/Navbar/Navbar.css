@@ -94,7 +94,7 @@
 
 @media (max-width:1000px) {
     .navbar-menu {
-        flex: 5;
+        flex: 4;
         justify-content: flex-end;
     }
 
