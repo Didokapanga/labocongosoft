@@ -270,6 +270,11 @@
 }
 
 @media (max-width:500px) {
+
+    .hero-left .video-play {
+        right: 43%;
+    }
+
     .hero-right h1 {
         margin-right: 50px;
     }
@@ -277,4 +282,6 @@
     .hero-right p {
         padding: 0;
     }
+
+
 }
