@@ -36,7 +36,7 @@
     text-align: center;
     line-height: 1.2;
     font-weight: 600;
-    color: #3968eb;
+    color: var(--primary);
 }
 
 .services-card {
@@ -83,6 +83,7 @@
 .services-card h3 {
     text-align: center;
     padding: 0 20px;
+    color: var(--primary);
 }
 
 .services-card .service-icon img {
@@ -111,6 +112,7 @@
 .services-card p {
     text-align: start;
     padding: 25px 0 0 30px;
+    color: var(--text);
 }
 
 
