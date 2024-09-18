@@ -1,0 +1,16 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cercle 1 -->
+  <circle cx="80" cy="100" r="50" fill="#182C61">
+    <animate attributeName="r" values="50; 30; 50" dur="3s" begin="0s; circle2.end; circle3.end" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Cercle 2 -->
+  <circle cx="150" cy="100" r="30" fill="#3E518D">
+    <animate attributeName="r" values="30; 50; 30" dur="3s" begin="1s; circle1.end; circle3.end" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Cercle 3 -->
+  <circle cx="220" cy="100" r="30" fill="#4C7ACB">
+    <animate attributeName="r" values="30; 50; 30" dur="3s" begin="2s; circle1.end; circle2.end" repeatCount="indefinite" />
+  </circle>
+</svg>

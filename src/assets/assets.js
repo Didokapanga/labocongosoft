@@ -11,27 +11,12 @@ import stars from './start.svg'
 import coding from './coding.svg'
 import logo_C from './logo-c.svg'
 import mysql from './mysql.svg'
-import marque_1 from './1.svg'
-import marque_2 from './2.svg'
-import marque_3 from './3.svg'
-import marque_4 from './4.svg'
-import marque_5 from './5.svg'
-import marque_6 from './6.svg'
-import marque_7 from './7.svg'
-import marque_8 from './8.svg'
-import marque_9 from './9.svg'
-import marque_10 from './10.svg'
-import marque_11 from './11.svg'
-import marque_12 from './12.svg'
-import marque_13 from './13.svg'
-import marque_14 from './14.svg'
-import marque_15 from './15.svg'
-import marque_16 from './16.svg'
 import computer from './computer.webp'
 import project_1 from './project1.webp'
 import user_1 from './u1.jpg'
 import user_2 from './u2.jpg'
 import user_3 from './u3.jpg'
+import animation from './animation.svg'
 
 export {
     logo,
@@ -48,26 +33,11 @@ export {
     stars,
     mysql,
     logo_C,
-    marque_1,
-    marque_2,
-    marque_3,
-    marque_4,
-    marque_5,
-    marque_6,
-    marque_7,
-    marque_8,
-    marque_9,
-    marque_10,
-    marque_11,
-    marque_12,
-    marque_13,
-    marque_14,
-    marque_15,
-    marque_16,
     user_1,
     user_2,
     user_3,
-    play
+    play,
+    animation
 }
 
 export const formation = [
@@ -145,5 +115,23 @@ export const projects = [
         name: ' EventSphere',
         desc: 'Une plateforme de gestion d’événements permettant de créer, planifier et gérer des événements professionnels ou personnels. L’application offre des options de communication, et de suivi des inscriptions.',
         cat: 'Gestion'
+    }
+]
+
+export const teams = [
+    {
+        image: "/src/assets/animation.svg",
+        title: "Collaboration et travail d'équipe",
+        desc: "Nous croyons au pouvoir du collectif. Chez LCSoft, chaque membre de l'équipe est un acteur clé qui contribue à notre réussite."
+    },
+    {
+        image: "/src/assets/animation-3.svg",
+        title: "Écoute et adaptation aux besoins",
+        desc: "Nous sommes à l’écoute de nos clients et du marché pour comprendre leurs attentes et anticiper leurs besoins."
+    },
+    {
+        image: "/src/assets/animation-2.svg",
+        title: "Excellence et Innovation",
+        desc: "Nous nous engageons à toujours rechercher l'excellence en offrant des solutions innovantes et sur mesure pour répondre vos besoins."
     }
 ]

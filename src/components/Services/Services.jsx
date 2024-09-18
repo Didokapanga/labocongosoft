@@ -5,6 +5,7 @@ import { BiSupport } from 'react-icons/bi';
 import { TbDatabaseSearch } from 'react-icons/tb';
 import { MdOutlineDevicesOther } from 'react-icons/md';
 import { GrUserExpert } from 'react-icons/gr';
+import Teams from '../Teams/Teams';
 
 const Services = () => {
     // Références pour observer les animations
@@ -91,6 +92,7 @@ const Services = () => {
                     </ul>
                 </div>
             </div>
+            <Teams />
         </div>
     );
 }
