@@ -42,8 +42,8 @@
 .hero-left .video-play {
     width: 60px;
     cursor: pointer;
-    position: relative;
-    right: 52%;
+    position: absolute;
+    right: 72%;
 }
 
 .hero-right {
@@ -203,7 +203,7 @@
     }
 
     .hero-left .video-play {
-        left: -50%;
+        right: 48%;
     }
 
     .hero-right {
@@ -238,7 +238,7 @@
     }
 
     .hero-left .video-play {
-        left: -50%;
+        right: 45%;
     }
 
     .hero-right {
