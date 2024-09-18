@@ -25,6 +25,10 @@
     margin-top: 10%;
 }
 
+.teams-left h2 {
+    color: var(--primary);
+}
+
 .teams-left a {
     padding: 10px 40px;
     border: 1px solid #696969;
@@ -40,6 +44,7 @@
 
 .teams-left p {
     padding: 30px 30px 20px 0;
+    color: var(--text);
 }
 
 .teams-left .teams-secondary-text {
@@ -49,6 +54,16 @@
 
 .teams-right {
     flex: 1;
+}
+
+.title-team h2 {
+    color: var(--primary);
+}
+
+/* A modifier */
+.teams-right ul {
+    margin: 0;
+    padding: 0;
 }
 
 .teams-right .title-team {
@@ -232,6 +247,10 @@
 
     .teams-right .title-team h2 {
         margin-right: 45%;
+    }
+
+    .teams-left {
+        margin-top: 0;
     }
 
 }

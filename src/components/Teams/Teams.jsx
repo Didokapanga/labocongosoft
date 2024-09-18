@@ -69,7 +69,7 @@ const Teams = () => {
                         {teams.map((team, index) => (
                             <li>
                                 <div className="team-item-img">
-                                    <img src={team.image} alt="" />
+                                    {/* <img src={team.image} alt="" /> */}
                                     <span className='team-detail'>
                                         <h4>{team.title}</h4>
                                         <div className="team-item-desc">{team.desc}</div>
