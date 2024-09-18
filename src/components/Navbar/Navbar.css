@@ -93,6 +93,11 @@
 }
 
 @media (max-width:1000px) {
+    .navbar-menu {
+        flex: 5;
+        justify-content: flex-end;
+    }
+
     .navbar-menu ul {
         display: none;
     }
@@ -101,10 +106,6 @@
         display: block;
         cursor: pointer;
         outline: none;
-    }
-
-    .navbar-menu {
-        justify-content: flex-end;
     }
 }
 
