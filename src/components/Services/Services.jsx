@@ -46,14 +46,13 @@ const Services = () => {
                     <ul>
                         {/* Ajouter une référence pour chaque élément du service */}
                         <li className='forme-animated' ref={(el) => serviceItemsRef.current[0] = el}>
-                            <h3>Études et conception des SI</h3>
+                            <h3>Conception de SII</h3>
                             <span className="service-icon">
                                 <img src={blob_1} alt="" />
                                 <span><TbDatabaseSearch /></span>
                             </span>
-                            <div className="trait"></div>
                             <p className="services-desc">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolorem suscipit, obcaecati molestias sapiente quidem?
                             </p>
                         </li>
                         <li className='forme-animated' ref={(el) => serviceItemsRef.current[1] = el}>
@@ -62,9 +61,8 @@ const Services = () => {
                                 <img src={blob_2} alt="" />
                                 <span><BiSupport /></span>
                             </span>
-                            <div className="trait"></div>
                             <p className="services-desc">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa numquam in ut repellat eius est?
                             </p>
                         </li>
                         <li className='forme-animated' ref={(el) => serviceItemsRef.current[2] = el}>
@@ -73,9 +71,8 @@ const Services = () => {
                                 <img src={blob_3} alt="" />
                                 <span><MdOutlineDevicesOther /></span>
                             </span>
-                            <div className="trait"></div>
                             <p className="services-desc">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet aut sequi hic? Quis, nulla doloremque?
                             </p>
                         </li>
                         <li className='forme-animated' ref={(el) => serviceItemsRef.current[3] = el}>
@@ -84,9 +81,9 @@ const Services = () => {
                                 <img src={blob_4} alt="" />
                                 <span><GrUserExpert /></span>
                             </span>
-                            <div className="trait"></div>
+                            {/* <div className="trait"></div> */}
                             <p className="services-desc">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore saepe exercitationem, nobis atque eveniet doloribus?
                             </p>
                         </li>
                     </ul>

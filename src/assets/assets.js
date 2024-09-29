@@ -17,6 +17,10 @@ import user_1 from './u1.jpg'
 import user_2 from './u2.jpg'
 import user_3 from './u3.jpg'
 import animation from './animation.svg'
+import video from './video.mp4'
+import one from './icon.svg'
+import two from './icon-2.svg'
+import three from './icon-3.svg'
 
 export {
     logo,
@@ -37,7 +41,11 @@ export {
     user_2,
     user_3,
     play,
-    animation
+    animation,
+    video,
+    one,
+    two,
+    three
 }
 
 export const formation = [
@@ -120,17 +128,17 @@ export const projects = [
 
 export const teams = [
     {
-        image: "./src/assets/animation.svg",
+        image: three,
         title: "Collaboration et travail d'équipe",
         desc: "Nous croyons au pouvoir du collectif. Chez LCSoft, chaque membre de l'équipe est un acteur clé qui contribue à notre réussite."
     },
     {
-        image: "./src/assets/animation-3.svg",
+        image: two,
         title: "Écoute et adaptation aux besoins",
         desc: "Nous sommes à l’écoute de nos clients et du marché pour comprendre leurs attentes et anticiper leurs besoins."
     },
     {
-        image: "./src/assets/animation-2.svg",
+        image: one,
         title: "Excellence et Innovation",
         desc: "Nous nous engageons à toujours rechercher l'excellence en offrant des solutions innovantes et sur mesure pour répondre vos besoins."
     }

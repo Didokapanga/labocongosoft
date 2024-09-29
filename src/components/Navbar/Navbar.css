@@ -74,6 +74,23 @@
     /* Bleu semi-transparent */
 }
 
+.navbar-menu .contact {
+    background: var(--yelow);
+    padding: 10px;
+    border-radius: 7px;
+    transition: 1s ease-out;
+    cursor: pointer;
+}
+
+.navbar-menu .contact:hover {
+    background: #fff;
+}
+
+
+.navbar-menu .contact:hover a {
+    color: var(--primary);
+}
+
 .navbar-menu .berger-menu {
     z-index: 9999;
     color: #fff;
@@ -82,17 +99,35 @@
 }
 
 @media (max-width:600px) {
+    .navbar-content {
+        gap: 0;
+    }
+
     .navbar {
         height: 2rem;
+    }
+
+    .navbar-logo {
+        width: 100%;
+        height: 100%;
+        flex: 2;
     }
 
     .navbar .navbar-logo img {
         width: 100%;
         height: 100%;
     }
+
+    .berger-menu {
+        flex: 5;
+    }
 }
 
 @media (max-width:1000px) {
+    .navbar-content {
+        gap: 200px;
+    }
+
     .navbar-menu {
         flex: 4;
         justify-content: flex-end;
@@ -102,10 +137,29 @@
         display: none;
     }
 
+    .navbar-logo {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin: 0;
+        padding: 0;
+    }
+
     .navbar-menu .berger-menu {
-        display: block;
+        display: flex;
         cursor: pointer;
         outline: none;
+        flex: 12;
+        justify-content: flex-end;
+        text-align: end;
     }
 }
 

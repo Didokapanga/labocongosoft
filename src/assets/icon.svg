@@ -1,0 +1,28 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="120" cy="140" r="85" fill="#182C61">
+    <animate 
+      attributeName="cy" 
+      values="140;90;140" 
+      dur="2s" 
+      begin="0s;circle2.end;circle3.end" 
+      repeatCount="indefinite" />
+  </circle>
+
+  <circle cx="300" cy="140" r="85" fill="#182C61">
+    <animate 
+      attributeName="cy" 
+      values="140;90;140" 
+      dur="2s" 
+      begin="0.5s;circle1.end;circle3.end" 
+      repeatCount="indefinite" />
+  </circle>
+
+  <circle cx="480" cy="140" r="85" fill="#182C61">
+    <animate 
+      attributeName="cy" 
+      values="140;90;140" 
+      dur="2s" 
+      begin="1s;circle1.end;circle2.end" 
+      repeatCount="indefinite" />
+  </circle>
+</svg>

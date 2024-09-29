@@ -1,0 +1,65 @@
+.video-player {
+    position: relative;
+    width: 100%;
+    /* La largeur de la div est 100% du parent */
+    height: 100vh;
+    /* La hauteur est de 100% de la fenêtre */
+    overflow: hidden;
+    /* Empêche le débordement si la vidéo est plus grande */
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* La vidéo prendra 100% de la largeur de son parent */
+    height: 100%;
+    /* La vidéo prendra 100% de la hauteur de son parent */
+    object-fit: cover;
+    /* Pour s'assurer que la vidéo occupe tout l'espace, tout en gardant les proportions */
+    border-radius: 8px;
+    /* Optionnel si tu veux des bords arrondis */
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    outline: none;
+}
+
+.play-button {
+    background: transparent;
+    color: white;
+    font-size: 24px;
+    /* padding: 15px 30px; */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+.play-button:hover {
+    /* background-color: rgba(0, 0, 0, 0.9); */
+}
+
+@media (max-width: 768px) {
+    .play-button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .play-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}

@@ -47,7 +47,7 @@ const Navbar = () => {
                         <li><a href="">Nos réalisations</a></li>
                         <li><a href="">Formations</a></li>
                         <li><a href="">Produits</a></li>
-                        <li><a href="">Prendre contact</a></li>
+                        <li className='contact'><a href="">Prendre contact</a></li>
                     </ul>
                     <span className="berger-menu"><RiMenu4Line /></span>
                 </div>

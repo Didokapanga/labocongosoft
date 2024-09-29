@@ -68,8 +68,8 @@ const Teams = () => {
                     <ul className='teams-animate-top'>
                         {teams.map((team, index) => (
                             <li>
-                                <div className="team-item-img">
-                                    {/* <img src={team.image} alt="" /> */}
+                                <div className='team-item-img'>
+                                    <img src={team.image} alt="" />
                                     <span className='team-detail'>
                                         <h4>{team.title}</h4>
                                         <div className="team-item-desc">{team.desc}</div>
@@ -78,21 +78,21 @@ const Teams = () => {
                             </li>
                         ))}
                     </ul>
-                </div>
+                </div >
                 <div className="teams-left">
                     <span className="teams-primary-text">Pourquoi nous choisir ?</span>
                     <h2 className="secondary-text">
                         Transformer vos défis numériques<br />en opportunités de croissance!
                     </h2>
-                    <p className='teams-forme-animated' ref={(el) => teamItemsRef.current[0] = el}>
+                    <p className='teams-forme-animated' ref={(el) => teamItemsRef.current[1] = el}>
                         Chez LC Soft, nous nous engageons à vous accompagner dans la numérisation de vos processus pour optimiser vos performances et vous aider à atteindre vos objectifs stratégiques.
 
                         De plus, grâce à notre réseau de fournisseurs de confiance, nous avons la possibilité de vous fournir des équipements sûrs et fiables, garantissant ainsi une mise en œuvre réussie de vos projets technologiques.
                     </p>
-                    <a href="#" className='teams-blob-animated' ref={(el) => blobAnimatedRef.current[0] = el}>Voir Plus</a>
+                    <a href="#" className='teams-blob-animated' ref={(el) => blobAnimatedRef.current[2] = el}>Voir Plus</a>
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 }
 

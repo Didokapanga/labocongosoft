@@ -2,6 +2,7 @@ import './Hero.css';
 import { FaArrowDown } from 'react-icons/fa';
 import React, { useEffect, useRef } from 'react';
 import { play, project_1 } from '../../assets/assets';
+import AutoVideoPlayer from '../Home/AutoVideoPlayer';
 
 const Hero = () => {
 
@@ -46,8 +47,7 @@ const Hero = () => {
         <div className='hero'>
             <div className="hero-content">
                 <div className="hero-left">
-                    <img src={project_1} alt="" className='image-hero' />
-                    <img src={play} alt="" className='video-play' />
+                    <AutoVideoPlayer />
                 </div>
                 <div className="hero-right">
                     <h1 className='forme-animated' ref={(el) => serviceItemsRef.current[0] = el}>Votre agence spécialisée dans la <span className='text-color'>création de logiciels</span> sur mesure et de <span className="text-color">systèmes d'information</span> informatisé</h1>
