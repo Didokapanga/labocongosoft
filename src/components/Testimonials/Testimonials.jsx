@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './Testimonials.css'
 import { RiStarSFill } from 'react-icons/ri'
-import { user_1, user_2, user_3 } from '../../assets/assets'
+import { testimonials, user_1, user_2, user_3 } from '../../assets/assets'
 
 const Testimonials = () => {
 
@@ -41,22 +41,25 @@ const Testimonials = () => {
                     <h2 className="testimonials-title secondary-text">Travailler avec des clients prestigieux et avant-gardistes est une véritable source de fierté pour nous.</h2>
                 </div>
                 <div className='testimonials-item'>
-                    <div className="testimonials-card forme-animated" ref={(el) => serviceItemsRef.current[0] = el}>
-                        <span className="card-img">
-                            <img src={user_1} alt="" className="testimonials-logo" />
-                            <div className="note"><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /></div>
-                        </span>
-                        <span className="card-info">
-                            <p className="avis-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, tempora.</p>
-                        </span>
-                        <span className="card-detail">
-                            <span className="testimonials-name">
-                                <span>Franck Castano</span>
-                                <span className='fonction-testimonials'>Responsable de projet digital</span>
+                    {testimonials.map((testimonial, index) => (
+                        <div key={index} className="testimonials-card" ref={(el) => serviceItemsRef.current[0] = el}>
+                            <span className="card-img">
+                                <img src={testimonial.image} alt="" className="testimonials-logo" />
+                                {/* <div className="note"><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /></div> */}
+                                <div className="note">{testimonial.note}</div>
                             </span>
-                        </span>
-                    </div>
-                    <div className="testimonials-card forme-animated" ref={(el) => serviceItemsRef.current[1] = el}>
+                            <span className="card-info">
+                                <p className="avis-text">{testimonial.desc}</p>
+                            </span>
+                            <span className="card-detail">
+                                <span className="testimonials-name">
+                                    <span>{testimonial.name}</span>
+                                    <span className='fonction-testimonials'>{testimonial.role}</span>
+                                </span>
+                            </span>
+                        </div>
+                    ))}
+                    {/* <div className="testimonials-card forme-animated" ref={(el) => serviceItemsRef.current[1] = el}>
                         <span className="card-img">
                             <img src={user_2} alt="" className="testimonials-logo" />
                             <div className="note"><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /></div>
@@ -100,7 +103,7 @@ const Testimonials = () => {
                                 <span className='fonction-testimonials'>Responsable de projet digital</span>
                             </span>
                         </span>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

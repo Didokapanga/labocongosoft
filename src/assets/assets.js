@@ -168,3 +168,34 @@ export const products = [
         categorie: "Catégorie"
     }
 ]
+
+export const testimonials = [
+    {
+        image: user_1,
+        note: "⭐⭐⭐⭐⭐",
+        desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, tempora.",
+        name: "Franck Castano",
+        role: "Responsable de projet digital"
+    },
+    {
+        image: user_2,
+        note: "⭐⭐⭐⭐⭐",
+        desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, tempora.",
+        name: "Franck Castano",
+        role: "Responsable de projet digital"
+    },
+    {
+        image: user_3,
+        note: "⭐⭐⭐⭐⭐",
+        desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, tempora.",
+        name: "Franck Castano",
+        role: "Responsable de projet digital"
+    },
+    {
+        image: user_2,
+        note: "⭐⭐⭐⭐⭐",
+        desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, tempora.",
+        name: "Franck Castano",
+        role: "Responsable de projet digital"
+    }
+]

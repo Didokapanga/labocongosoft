@@ -78,7 +78,7 @@ const Projects = () => {
                 >
                     <ul>
                         {projects.map((project, index) => (
-                            <li className='forme-animated' ref={(el) => serviceItemsRef.current[3] = el}>
+                            <li key={index} className='forme-animated' ref={(el) => serviceItemsRef.current[3] = el}>
                                 <img src={project.image} alt="" className="projects-img" />
                                 <div className="projects-info forme-animated" ref={(el) => serviceItemsRef.current[7] = el}>
                                     <span className="name-info">
