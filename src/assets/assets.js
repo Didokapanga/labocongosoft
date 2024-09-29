@@ -21,6 +21,7 @@ import video from './video.mp4'
 import one from './icon.svg'
 import two from './icon-2.svg'
 import three from './icon-3.svg'
+import imprimante from './imprimante.png'
 
 export {
     logo,
@@ -45,7 +46,8 @@ export {
     video,
     one,
     two,
-    three
+    three,
+    imprimante
 }
 
 export const formation = [
@@ -141,5 +143,28 @@ export const teams = [
         image: one,
         title: "Excellence et Innovation",
         desc: "Nous nous engageons à toujours rechercher l'excellence en offrant des solutions innovantes et sur mesure pour répondre vos besoins."
+    }
+]
+
+export const products = [
+    {
+        image: imprimante,
+        title: "Imprimante",
+        categorie: "Catégorie"
+    },
+    {
+        image: imprimante,
+        title: "Imprimante",
+        categorie: "Catégorie"
+    },
+    {
+        image: imprimante,
+        title: "Imprimante",
+        categorie: "Catégorie"
+    },
+    {
+        image: imprimante,
+        title: "Imprimante",
+        categorie: "Catégorie"
     }
 ]
