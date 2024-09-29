@@ -50,44 +50,44 @@ export {
 
 export const formation = [
     {
-        first_logo: '/src/assets/logo-c.svg',
-        two_logo: '/src/assets/mysql.svg',
+        first_logo: logo_C,
+        two_logo: mysql,
         title: 'Formation complets en programmation desktop : C#, Mysqls',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
     },
     {
-        first_logo: '/src/assets/logo-c.svg',
-        two_logo: '/src/assets/mysql.svg',
+        first_logo: logo_C,
+        two_logo: mysql,
         title: 'Formation complets en programmation desktop : C#, Mysqls',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
     },
     {
-        first_logo: '/src/assets/logo-c.svg',
-        two_logo: '/src/assets/mysql.svg',
+        first_logo: logo_C,
+        two_logo: mysql,
         title: 'Formation complets en programmation desktop : C#, Mysqls',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
     },
     {
-        first_logo: '/src/assets/logo-c.svg',
-        two_logo: '/src/assets/mysql.svg',
+        first_logo: logo_C,
+        two_logo: mysql,
         title: 'Formation complets en programmation desktop : C#, Mysqls',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
     },
     {
-        first_logo: '/src/assets/logo-c.svg',
-        two_logo: '/src/assets/mysql.svg',
+        first_logo: logo_C,
+        two_logo: mysql,
         title: 'Formation complets en programmation desktop : C#, Mysqls',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
     },
     {
-        first_logo: '/src/assets/logo-c.svg',
-        two_logo: '/src/assets/mysql.svg',
+        first_logo: logo_C,
+        two_logo: mysql,
         title: 'Formation complets en programmation desktop : C#, Mysqls',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
     },
     {
-        first_logo: '/src/assets/logo-c.svg',
-        two_logo: '/src/assets/mysql.svg',
+        first_logo: logo_C,
+        two_logo: mysql,
         title: 'Formation complets en programmation desktop : C#, Mysqls',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
     }
@@ -95,31 +95,31 @@ export const formation = [
 
 export const projects = [
     {
-        image: '/src/assets/project1.webp',
+        image: project_1,
         name: 'DocuVerify',
         desc: 'Une solution de vérification numérique des documents, conçue pour authentifier des certificats, diplômes, ou tout autre document officiel, en partenariat avec des institutions ou organismes publics.',
         cat: 'Sécurité'
     },
     {
-        image: '/src/assets/project1.webp',
+        image: computer,
         name: 'EduCongo',
         desc: 'EduCongo est une application complète de gestion du système éducatif congolais, conçue pour numériser et centraliser toutes les opérations administrative.',
         cat: 'Education'
     },
     {
-        image: '/src/assets/project1.webp',
+        image: project_1,
         name: 'BookHub',
         desc: 'Une bibliothèque numérique interactive permettant de découvrir, lire et partager des livres électroniques. Les utilisateurs peuvent aussi participer à des discussions, créer des listes de lecture et accéder à des analyses littéraires.',
         cat: 'Education'
     },
     {
-        image: '/src/assets/project1.webp',
+        image: computer,
         name: 'TravelMate',
         desc: 'Une application mobile qui assiste les voyageurs dans la planification et la gestion de leurs voyages. Elle propose des itinéraires, des conseils de voyage, des alertes météo et des recommandations locales pour chaque destination.',
         cat: 'Voyage'
     },
     {
-        image: '/src/assets/project1.webp',
+        image: project_1,
         name: ' EventSphere',
         desc: 'Une plateforme de gestion d’événements permettant de créer, planifier et gérer des événements professionnels ou personnels. L’application offre des options de communication, et de suivi des inscriptions.',
         cat: 'Gestion'
