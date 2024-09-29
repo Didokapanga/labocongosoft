@@ -69,6 +69,10 @@
     color: #fff;
 }
 
+.services-card li:hover h3 {
+    color: white;
+}
+
 .services-card h3 {
     color: var(--primary);
 }
