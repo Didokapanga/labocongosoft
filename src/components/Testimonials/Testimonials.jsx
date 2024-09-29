@@ -44,9 +44,11 @@ const Testimonials = () => {
                     {testimonials.map((testimonial, index) => (
                         <div key={index} className="testimonials-card" ref={(el) => serviceItemsRef.current[0] = el}>
                             <span className="card-img">
-                                <img src={testimonial.image} alt="" className="testimonials-logo" />
-                                {/* <div className="note"><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /></div> */}
-                                <div className="note">{testimonial.note}</div>
+                                <div className="card-image">
+                                    <img src={testimonial.image} alt="" className="testimonials-logo" />
+                                </div>
+                                <div className="note"><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /></div>
+                                {/* <div className="note">{testimonial.note}</div> */}
                             </span>
                             <span className="card-info">
                                 <p className="avis-text">{testimonial.desc}</p>
@@ -59,51 +61,6 @@ const Testimonials = () => {
                             </span>
                         </div>
                     ))}
-                    {/* <div className="testimonials-card forme-animated" ref={(el) => serviceItemsRef.current[1] = el}>
-                        <span className="card-img">
-                            <img src={user_2} alt="" className="testimonials-logo" />
-                            <div className="note"><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /></div>
-                        </span>
-                        <span className="card-info">
-                            <p className="avis-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, tempora.</p>
-                        </span>
-                        <span className="card-detail">
-                            <span className="testimonials-name">
-                                <span>Franck Castano</span>
-                                <span className='fonction-testimonials'>Responsable de projet digital</span>
-                            </span>
-                        </span>
-                    </div>
-                    <div className="testimonials-card forme-animated" ref={(el) => serviceItemsRef.current[2] = el}>
-                        <span className="card-img">
-                            <img src={user_3} alt="" className="testimonials-logo" />
-                            <div className="note"><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /></div>
-                        </span>
-                        <span className="card-info">
-                            <p className="avis-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, tempora.</p>
-                        </span>
-                        <span className="card-detail">
-                            <span className="testimonials-name">
-                                <span>Franck Castano</span>
-                                <span className='fonction-testimonials'>Responsable de projet digital</span>
-                            </span>
-                        </span>
-                    </div>
-                    <div className="testimonials-card forme-animated" ref={(el) => serviceItemsRef.current[3] = el}>
-                        <span className="card-img">
-                            <img src={user_3} alt="" className="testimonials-logo" />
-                            <div className="note"><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /></div>
-                        </span>
-                        <span className="card-info">
-                            <p className="avis-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, tempora.</p>
-                        </span>
-                        <span className="card-detail">
-                            <span className="testimonials-name">
-                                <span>Franck Castano</span>
-                                <span className='fonction-testimonials'>Responsable de projet digital</span>
-                            </span>
-                        </span>
-                    </div> */}
                 </div>
             </div>
         </div>

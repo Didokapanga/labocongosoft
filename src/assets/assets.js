@@ -16,6 +16,7 @@ import project_1 from './project1.webp'
 import user_1 from './u1.jpg'
 import user_2 from './u2.jpg'
 import user_3 from './u3.jpg'
+import user_4 from './u4.jpg'
 import animation from './animation.svg'
 import video from './video.mp4'
 import one from './icon.svg'
@@ -41,6 +42,7 @@ export {
     user_1,
     user_2,
     user_3,
+    user_4,
     play,
     animation,
     video,
@@ -181,21 +183,21 @@ export const testimonials = [
         image: user_2,
         note: "⭐⭐⭐⭐⭐",
         desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, tempora.",
-        name: "Franck Castano",
-        role: "Responsable de projet digital"
+        name: "Richard Max",
+        role: "Chef de projet"
     },
     {
         image: user_3,
         note: "⭐⭐⭐⭐⭐",
         desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, tempora.",
-        name: "Franck Castano",
-        role: "Responsable de projet digital"
+        name: "Pierre Elie",
+        role: "Ui/UX Designer"
     },
     {
-        image: user_2,
+        image: user_4,
         note: "⭐⭐⭐⭐⭐",
         desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, tempora.",
-        name: "Franck Castano",
-        role: "Responsable de projet digital"
+        name: "Elie Mala",
+        role: "Digital manager"
     }
 ]

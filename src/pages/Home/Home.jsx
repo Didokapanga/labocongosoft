@@ -6,6 +6,8 @@ import Projects from '../../components/Projects/Projects'
 import Formations from '../../components/Formations/Formations'
 import Products from '../../components/Home/Products/Products'
 import Testimonials from '../../components/Testimonials/Testimonials'
+import Agence from '../../components/Agence/Agence'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
     return (
@@ -16,6 +18,8 @@ const Home = () => {
             <Formations />
             <Products />
             <Testimonials />
+            <Agence />
+            <Footer />
         </div>
     )
 }
