@@ -34,11 +34,17 @@
     font-size: 14px;
     font-weight: 500;
     font-family: 'Monserrat', sans-serif;
+    background: #fff;
+}
+
+.form-group input {
+    background: #fff;
 }
 
 .form-group textarea {
     height: 100px;
     resize: vertical;
+    background: #fff;
 }
 
 .buttons {

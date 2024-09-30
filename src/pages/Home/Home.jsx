@@ -8,6 +8,7 @@ import Products from '../../components/Home/Products/Products'
 import Testimonials from '../../components/Testimonials/Testimonials'
 import Agence from '../../components/Agence/Agence'
 import Footer from '../../components/Footer/Footer'
+import Copyright from '../../components/Copyright/Copyright'
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
             <Testimonials />
             <Agence />
             <Footer />
+            <Copyright />
         </div>
     )
 }

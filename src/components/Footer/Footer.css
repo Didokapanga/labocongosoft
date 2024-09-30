@@ -116,6 +116,10 @@
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 2fr);
     }
+
+    .footer .footer-cta {
+        padding: 0 50px;
+    }
 }
 
 @media (max-width:500px) {
