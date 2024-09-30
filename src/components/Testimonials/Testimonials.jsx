@@ -43,21 +43,16 @@ const Testimonials = () => {
                 <div className='testimonials-item'>
                     {testimonials.map((testimonial, index) => (
                         <div key={index} className="testimonials-card" ref={(el) => serviceItemsRef.current[0] = el}>
-                            <span className="card-img">
-                                <div className="card-image">
-                                    <img src={testimonial.image} alt="" className="testimonials-logo" />
-                                </div>
-                                <div className="note"><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /></div>
-                                {/* <div className="note">{testimonial.note}</div> */}
-                            </span>
+                            <div className="testimonals-img">
+                                <img src={testimonial.image} alt="" className="testimonials-logo" />
+                            </div>
+                            <div className="note"><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /></div>
                             <span className="card-info">
                                 <p className="avis-text">{testimonial.desc}</p>
                             </span>
                             <span className="card-detail">
-                                <span className="testimonials-name">
-                                    <span>{testimonial.name}</span>
-                                    <span className='fonction-testimonials'>{testimonial.role}</span>
-                                </span>
+                                <span className='name-user'>{testimonial.name}</span>
+                                <span className='fonction-testimonials'>{testimonial.role}</span>
                             </span>
                         </div>
                     ))}

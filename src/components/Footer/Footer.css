@@ -4,7 +4,8 @@
     height: 100%;
     /* background-image: url("/src/assets/hero-background.jpg"); */
     /* background: linear-gradient(75deg, #182C61, #f9ca24, #f9cb24ad); */
-    background: #375197;
+    /* background: #375197; */
+    background: var(--primary);
     display: flex;
     flex-direction: column;
     align-items: center;
