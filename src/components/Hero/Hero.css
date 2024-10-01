@@ -239,10 +239,6 @@
 
 @media (max-width:600px) {
 
-    .hero-content {
-        /* height: 25rem; */
-    }
-
     .hero-left .video-play {
         right: 45%;
     }
@@ -257,7 +253,7 @@
         padding: 0;
         margin: 0;
         margin-right: 70px;
-        margin-top: 50px;
+        margin-top: 80px;
     }
 
     .hero-right .trait-hero {
@@ -293,4 +289,10 @@
     }
 
 
+}
+
+@media (max-width: 450px) {
+    .hero-content {
+        height: 40rem;
+    }
 }
