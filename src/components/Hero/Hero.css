@@ -183,7 +183,7 @@
 @media (max-width:900px) {
     .hero-content {
         flex-direction: column;
-        height: 50rem;
+        height: 30rem;
     }
 
     .hero-btn {
@@ -193,7 +193,12 @@
     .hero-left {
         width: 100%;
         height: 100px;
+        display: none;
 
+    }
+
+    .hero-left h1 {
+        margin: 0;
     }
 
     .hero-left .image-hero {
@@ -207,6 +212,7 @@
     }
 
     .hero-right {
+        height: 100%;
         text-align: start;
         padding: 0;
         margin: 0;
@@ -234,7 +240,7 @@
 @media (max-width:600px) {
 
     .hero-content {
-        height: 45rem;
+        /* height: 25rem; */
     }
 
     .hero-left .video-play {
@@ -270,6 +276,9 @@
 }
 
 @media (max-width:500px) {
+    .hero-content {
+        height: 35rem;
+    }
 
     .hero-left .video-play {
         right: 43%;
