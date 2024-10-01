@@ -7,8 +7,8 @@ const Copyright = () => {
     return (
         <div className='copyright'>
             <div className="copyright-content">
-                <div className="copyrigth-left">
-                    <p>© Copyright - Tous les droits sont résevés par lcsoft</p>
+                <div className="copyright-left">
+                    <p className='copyright-text'>© Copyright - Tous les droits sont résevés par lcsoft</p>
                 </div>
                 <div className="copyright-right">
                     <sapn className="social-media"><FaFacebook /></sapn>
