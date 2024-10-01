@@ -9,6 +9,11 @@ const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
 
     const handleScroll = () => {
+        // Vérifie la largeur de l'écran
+        if (window.innerWidth < 600) {
+            return; // Désactiver la fonctionnalité sur les écrans < 600px
+        }
+
         const currentScrollY = window.scrollY;
 
         if (currentScrollY > lastScrollY) {
@@ -34,6 +39,7 @@ const Navbar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [lastScrollY]);
+
 
     return (
         <nav className={`navbar ${showNavbar ? 'navbar--visible' : 'navbar--hidden'} ${isScrolled ? 'navbar--scrolled' : ''}`}>
