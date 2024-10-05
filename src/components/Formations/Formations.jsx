@@ -35,28 +35,29 @@ const Formations = () => {
         };
     }, []);
 
-    useEffect(() => {
-        // Fonction pour faire défiler automatiquement
-        const startAutoScroll = () => {
-            scrollInterval.current = setInterval(() => {
-                if (scrollContainerRef.current) {
-                    scrollContainerRef.current.scrollLeft += 300; // Ajuste la valeur selon tes besoins
-                    if (scrollContainerRef.current.scrollLeft >= scrollContainerRef.current.scrollWidth - scrollContainerRef.current.clientWidth) {
-                        scrollContainerRef.current.scrollLeft = 0;
-                    }
-                }
-            }, 3000); // Ajuste l'intervalle de temps selon tes besoins
-        };
 
-        startAutoScroll();
+    // useEffect(() => {
+    //     // Fonction pour faire défiler automatiquement
+    //     const startAutoScroll = () => {
+    //         scrollInterval.current = setInterval(() => {
+    //             if (scrollContainerRef.current) {
+    //                 scrollContainerRef.current.scrollLeft += 300; // Ajuste la valeur selon tes besoins
+    //                 if (scrollContainerRef.current.scrollLeft >= scrollContainerRef.current.scrollWidth - scrollContainerRef.current.clientWidth) {
+    //                     scrollContainerRef.current.scrollLeft = 0;
+    //                 }
+    //             }
+    //         }, 3000); // Ajuste l'intervalle de temps selon tes besoins
+    //     };
 
-        // Nettoyage
-        return () => {
-            if (scrollInterval.current) {
-                clearInterval(scrollInterval.current);
-            }
-        };
-    }, []);
+    //     startAutoScroll();
+
+    //     // Nettoyage
+    //     return () => {
+    //         if (scrollInterval.current) {
+    //             clearInterval(scrollInterval.current);
+    //         }
+    //     };
+    // }, []);
 
     const scrollTo = (index) => {
         if (scrollContainerRef.current) {

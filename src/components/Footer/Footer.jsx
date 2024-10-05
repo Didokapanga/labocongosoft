@@ -76,7 +76,9 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-            <span className='footer-cta forme-animated' ref={(el) => serviceItemsRef.current[4] = el}>Ce site web reflète notre expertise. Imaginez ce que nous pourrions accomplir ensemble pour répondre à vos besoins spécifiques !</span>
+            <span className='footer-cta forme-animated' ref={(el) => serviceItemsRef.current[4] = el}>
+                Ce site web reflète notre expertise. Imaginez ce que nous pourrions accomplir ensemble pour répondre à vos besoins spécifiques !
+            </span>
         </div>
     )
 }

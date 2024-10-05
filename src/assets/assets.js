@@ -201,3 +201,22 @@ export const testimonials = [
         role: "Digital manager"
     }
 ]
+
+export const faqData = [
+    {
+        question: "Quels services proposez-vous ?",
+        answer: "Nous proposons des services variés allant de la création de sites web à la conception d'applications mobiles et bien plus encore."
+    },
+    {
+        question: "Quels sont vos tarifs ?",
+        answer: "Nos tarifs sont personnalisés en fonction des besoins du client. Contactez-nous pour un devis adapté à vos projets."
+    },
+    {
+        question: "Quelle est la durée de réalisation d'un projet ?",
+        answer: "Cela dépend de la complexité du projet, mais en général, nos projets durent entre 2 semaines et 3 mois."
+    },
+    {
+        question: "Offrez-vous une garantie après livraison ?",
+        answer: "Oui, nous offrons une période de garantie après la livraison pour assurer la qualité de nos services."
+    }
+];

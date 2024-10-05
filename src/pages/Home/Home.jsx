@@ -9,6 +9,7 @@ import Testimonials from '../../components/Testimonials/Testimonials'
 import Agence from '../../components/Agence/Agence'
 import Footer from '../../components/Footer/Footer'
 import Copyright from '../../components/Copyright/Copyright'
+import Faq from '../../components/Home/FAQ/Faq'
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
             <Products />
             <Testimonials />
             <Agence />
+            <Faq />
             <Footer />
             <Copyright />
         </div>
