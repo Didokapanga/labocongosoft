@@ -1,14 +1,43 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Faq.css'
 import { faqData } from '../../../assets/assets';
 import { BsChatLeftDotsFill } from 'react-icons/bs';
 
 const Faq = () => {
     const [activeIndex, setActiveIndex] = useState(null);
+    const serviceItemsRef = useRef([]);
 
     const toggleAnswer = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
+
+
+    useEffect(() => {
+        // Fonction d'observation
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+
+        // Observer chaque élément du service
+        serviceItemsRef.current.forEach((item) => {
+            if (item) observer.observe(item);
+        });
+
+        // Nettoyage
+        return () => {
+            serviceItemsRef.current.forEach((item) => {
+                if (item) observer.unobserve(item);
+            });
+        };
+    }, []);
+
     return (
         <div className='faq'>
             <div className="faq-content">
@@ -17,7 +46,7 @@ const Faq = () => {
                     <h2 className="faq-title secondary-text">Des questions fréquemment posées</h2>
                 </div>
                 <div className="faq-item">
-                    <div className="faq-left">
+                    <div className="faq-left forme-animated" ref={(el) => serviceItemsRef.current[0] = el}>
                         <div className="faq-left">
                             {faqData.map((item, index) => (
                                 <div key={index} className="faq-question" onClick={() => toggleAnswer(index)}>
@@ -31,7 +60,7 @@ const Faq = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="faq-right">
+                    <div className="faq-right forme-animated" ref={(el) => serviceItemsRef.current[1] = el}>
                         <div className="faq-cta">
                             <span>
                                 <BsChatLeftDotsFill />
