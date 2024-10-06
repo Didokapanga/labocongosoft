@@ -23,6 +23,8 @@ import one from './icon.svg'
 import two from './icon-2.svg'
 import three from './icon-3.svg'
 import imprimante from './imprimante.png'
+import image1 from './img1.svg'
+// import image2 from './img2.png'
 
 export {
     logo,
@@ -49,7 +51,9 @@ export {
     one,
     two,
     three,
-    imprimante
+    imprimante,
+    image1,
+    // image2
 }
 
 export const formation = [

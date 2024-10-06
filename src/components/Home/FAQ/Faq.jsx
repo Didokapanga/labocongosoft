@@ -65,12 +65,12 @@ const Faq = () => {
                             <span>
                                 <BsChatLeftDotsFill />
                             </span>
-                            <h3>Vous avez un dévis ?</h3>
+                            <h3>Vous avez une idée en tête ?</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita culpa quaerat ut non debitis et nisi doloribus tempora similique dolore.
                             </p>
                             <button className="faq-btn">
-                                Envoyez-nous votre dévis
+                                Réservez un rendez-vous
                             </button>
                         </div>
                     </div>

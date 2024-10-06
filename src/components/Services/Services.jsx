@@ -7,7 +7,7 @@ import { MdOutlineDevicesOther } from 'react-icons/md';
 import { GrUserExpert } from 'react-icons/gr';
 import Teams from '../Teams/Teams';
 
-const Services = () => {
+const Services = ({ headerServices }) => {
     // Références pour observer les animations
     const serviceItemsRef = useRef([]);
 
@@ -89,7 +89,6 @@ const Services = () => {
                     </ul>
                 </div>
             </div>
-            <Teams />
         </div>
     );
 }

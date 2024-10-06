@@ -10,12 +10,14 @@ import Agence from '../../components/Agence/Agence'
 import Footer from '../../components/Footer/Footer'
 import Copyright from '../../components/Copyright/Copyright'
 import Faq from '../../components/Home/FAQ/Faq'
+import Teams from '../../components/Teams/Teams'
 
 const Home = () => {
     return (
         <div className='home'>
             <Hero />
             <Services />
+            <Teams />
             <Projects />
             <Formations />
             <Products />

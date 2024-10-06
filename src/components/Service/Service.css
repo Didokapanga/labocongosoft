@@ -1,0 +1,171 @@
+.serviceHero {
+    width: 100%;
+    height: 100%;
+    background: var(--blue-spiro);
+    display: flex;
+    justify-content: center;
+}
+
+.serviceHero-wrapper {
+    display: flex;
+    width: 90%;
+    height: 35rem;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.service-wrapper .services-card {
+    position: relative;
+    bottom: 150px;
+}
+
+.service-wrapper .services-card li {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.08);
+    background: #f1f1f1;
+}
+
+.service-wrapper .services-card li:hover h3 {
+    color: var(--primary);
+}
+
+.service-wrapper .services-card li:hover p {
+    color: var(--primary);
+}
+
+.service-wrapper .services-card li:hover span {
+    color: var(--primary);
+}
+
+.serviceHero-left {
+    flex: 1;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.serviceHero-left h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.5;
+
+}
+
+.serviceHero-left p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.serviceHero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.serviceHero-right img {
+    width: 100%;
+}
+
+.service-wrapper {
+    width: 90%;
+}
+
+.serviceInfo {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    bottom: 100px;
+}
+
+.serviceInfo .serviceInfo-left {
+    width: 50%;
+    height: 100%;
+}
+
+.serviceInfo .serviceInfo-center {
+    width: 100%;
+    height: 100%;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+}
+
+.serviceInfo .center-info {
+    width: 50%;
+}
+
+.serviceInfo .serviceInfo-right {
+    width: 50%;
+    height: 100%;
+}
+
+
+@media (max-width:1200px) {
+    .serviceHero-left h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width:1000px) {
+    .serviceHero-wrapper {
+        margin-top: 100px;
+    }
+
+    .serviceHero-wrapper .serviceHero-left h1 {
+        font-size: 27px;
+    }
+
+    .serviceHero-wrapper .serviceHero-left p {
+        font-size: 16px;
+    }
+
+    .serviceInfo .serviceInfo-left {
+        width: 100%;
+    }
+
+    .serviceInfo .center-info {
+        width: 100%;
+    }
+
+    .serviceInfo .serviceInfo-right {
+        width: 100%;
+    }
+}
+
+@media (max-width:900px) {
+    .serviceHero-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:640px) {
+    .serviceHero-wrapper {
+        margin-top: 100px;
+        height: 25rem;
+    }
+
+    .serviceHero-left h1 {
+        font-size: 25px;
+    }
+
+    .serviceHero-left p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:600px) {
+    .serviceHero-wrapper .serviceHero-right {
+        display: none;
+    }
+
+    .serviceHero-wrapper {
+        height: 30rem;
+    }
+}
