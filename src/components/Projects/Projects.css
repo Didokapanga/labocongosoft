@@ -345,6 +345,7 @@
     .projects-item .mobile-item .mobile-desc {
         font-size: 14px;
         font-weight: 500;
+        color: var(--text);
     }
 
 }
