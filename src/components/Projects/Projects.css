@@ -108,7 +108,7 @@
     display: none;
 }
 
-.projects-item li {
+.projects-item .project-primary {
     width: 35rem;
     height: 20rem;
     border-radius: 7px;
@@ -137,14 +137,14 @@
     font-size: 16px;
 }
 
-.projects-item li img {
+.projects-item .project-primary img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: 0;
 }
 
-.projects-item li:hover img {
+.projects-item .project-primary:hover img {
     transform: scale(1.1);
 }
 
@@ -180,7 +180,7 @@
     margin: 0;
 }
 
-.projects-item li .name-desc {
+.projects-item .project-primary .name-desc {
     margin: 5px 5px;
     font-size: 14px;
 }
@@ -218,9 +218,13 @@
     align-items: center;
 }
 
-.projects-item li:hover .go {
+.projects-item .project-primary:hover .go {
     transform: translateY(0);
     cursor: pointer;
+}
+
+.projects-item .mobile-projects {
+    display: none;
 }
 
 /*******************/
@@ -262,35 +266,6 @@
 
 /*******/
 
-
-@media (max-width:1000px) {
-    .projects-title h2 {
-        /* margin-left: 40%; */
-    }
-
-    .projects-title span {
-        /* margin-left: 40%; */
-    }
-
-    .projects-title a {
-        /* margin-left: 40%; */
-    }
-}
-
-@media (max-width:900px) {
-    /* .projects-title h2 {
-        margin-left: 30%;
-    }
-
-    .projects-title a {
-        margin-left: 30%;
-    }
-
-    .projects-title span {
-        margin-left: 30%;
-    } */
-}
-
 @media (max-width:600px) {
     .projects-title {
         width: 100%;
@@ -314,14 +289,62 @@
     }
 }
 
-@media (max-width: 500px) {
-    .projects-item li {
-        width: 25rem;
-        height: 20rem;
+@media (max-width: 1000px) {
+    .projects-item .projects-primary {
+        display: none;
     }
 
-    .projects-info {
-        width: 70%;
-        left: 45%;
+    .projects-item .mobile-projects {
+        display: block;
     }
+
+    .projects-item .projects-scroll {
+        margin-top: 280px;
+        font-size: 40px;
+    }
+
+    .projects-item .mobile-projects {
+        display: flex;
+    }
+
+    .projects-item .mobile-item {
+        width: 20rem;
+        height: 35rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-sizing: border-box;
+        background: #f1f1f1;
+    }
+
+    .mobile-project-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .projects-item .mobile-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .projects-item .projects-mobile-info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    .projects-item .mobile-item .mobile-info span {
+        color: var(--primary);
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .projects-item .mobile-item .mobile-desc {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
 }

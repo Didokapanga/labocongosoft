@@ -98,9 +98,9 @@ const Projects = () => {
                         <span onClick={() => scroll(-1)}><FaArrowCircleLeft /></span>
                         <span onClick={() => scroll(1)}><FaArrowCircleRight /></span>
                     </div>
-                    <ul>
+                    <ul className='projects-primary'>
                         {projects.map((project, index) => (
-                            <li key={index} className='forme-animated' ref={(el) => serviceItemsRef.current[3] = el}>
+                            <li key={index} className='project-primary forme-animated' ref={(el) => serviceItemsRef.current[3] = el}>
                                 <img src={project.image} alt="" className="projects-img" />
                                 <div className="projects-info forme-animated" ref={(el) => serviceItemsRef.current[7] = el}>
                                     <span className="name-info">
@@ -114,6 +114,23 @@ const Projects = () => {
                                             <span>{project.cat}</span>
                                         </span>
                                         <span className='go'><FaArrowRight /></span>
+                                    </div>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                    <ul className='mobile-projects'>
+                        {projects.map((project, index) => (
+                            <li key={index} className='mobile-item forme-animated' ref={(el) => serviceItemsRef.current[3] = el}>
+                                <div className="mobile-project-img">
+                                    <img src={project.image} alt="" className="projects-mobile-img" />
+                                </div>
+                                <div className="projects-mobile-info forme-animated" ref={(el) => serviceItemsRef.current[7] = el}>
+                                    <span className="mobile-info">
+                                        <span>{project.name}</span>
+                                    </span>
+                                    <span className="mobile-desc">{project.desc}</span>
+                                    <div className="cat-mobile-info">
                                     </div>
                                 </div>
                             </li>
