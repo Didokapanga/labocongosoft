@@ -96,18 +96,18 @@
 }
 
 /* Styles de base pour les éléments avant l'animation */
-.testimonials-content .forme-animated {
+/* .testimonials-item .testimonials-card {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease, transform 0.6s ease;
-}
+} */
 
 /* Styles lorsque les éléments deviennent visibles */
-.testimonials-content .forme-animated.is-visible {
+/* .testimonials-item .testimonials-card.is-visible {
     opacity: 1;
     transform: translateY(0);
     animation: slideInFromBottom 1s ease-out forwards;
-}
+} */
 
 @keyframes slideInFromBottom {
     0% {

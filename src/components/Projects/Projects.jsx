@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Projects.css';
 import { project_1, projects } from '../../assets/assets';
 import { FaArrowRight } from 'react-icons/fa6';
+import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 const Projects = () => {
     // Références pour observer les animations
@@ -60,6 +61,23 @@ const Projects = () => {
         scrollRef.current.scrollLeft = scrollLeft - walk;
     };
 
+    // Fonction pour le scroll horizontal avec les flèches
+    const scroll = (direction) => {
+        const remToPx = 16; // 1rem = 16px
+        let scrollAmount = 300; // Valeur par défaut en pixels
+
+        // Vérifier si l'écran est inférieur à 500px et ajuster le scroll
+        if (window.innerWidth <= 500) {
+            scrollAmount = 27 * remToPx; // Convertir 25rem en pixels
+        }
+
+        scrollRef.current.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth',
+        });
+    };
+
+
     return (
         <div className='projects'>
             <div className="projects-content">
@@ -76,6 +94,10 @@ const Projects = () => {
                     onMouseUp={handleMouseUp}
                     onMouseMove={handleMouseMove}
                 >
+                    <div className='projects-scroll'>
+                        <span onClick={() => scroll(-1)}><FaArrowCircleLeft /></span>
+                        <span onClick={() => scroll(1)}><FaArrowCircleRight /></span>
+                    </div>
                     <ul>
                         {projects.map((project, index) => (
                             <li key={index} className='forme-animated' ref={(el) => serviceItemsRef.current[3] = el}>

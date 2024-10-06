@@ -61,10 +61,27 @@ const Formations = () => {
 
     const scrollTo = (index) => {
         if (scrollContainerRef.current) {
-            const scrollAmount = index * 300; // Ajuste la valeur selon tes besoins
-            scrollContainerRef.current.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+            const remToPx = 16; // 1rem = 16px, ajustez si nécessaire
+            let itemWidth;
+
+            // Vérifier la largeur de l'écran
+            if (window.innerWidth < 900) {
+                // Si la largeur de l'écran est inférieure à 900px, ajuster la largeur des éléments
+                itemWidth = 25 * remToPx; // Réduit à 16rem par exemple sur les petits écrans
+            } else {
+                itemWidth = 25 * remToPx; // 20rem pour les écrans plus larges
+            }
+
+            const scrollAmount = index * itemWidth; // Calcule la position de défilement
+
+            scrollContainerRef.current.scrollTo({
+                left: scrollAmount,
+                behavior: 'smooth' // Défilement fluide
+            });
         }
     };
+
+
 
     return (
         <div className='formations'>

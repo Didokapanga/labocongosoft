@@ -106,8 +106,8 @@
     padding: 0;
 }
 
-/* Styles de base pour les éléments avant l'animation */
 .agence-item .forme-animated {
+    /* Styles de base pour les éléments avant l'animation */
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease, transform 0.6s ease;

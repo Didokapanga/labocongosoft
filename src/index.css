@@ -94,7 +94,7 @@ button:hover {
 .secondary-text {
   margin: 5px 0;
   text-align: start;
-  line-height: 1.2;
+  line-height: 1.5;
   font-weight: 600;
   color: var(--primary);
 }
