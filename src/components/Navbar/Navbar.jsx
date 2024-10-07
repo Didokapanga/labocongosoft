@@ -69,7 +69,7 @@ const Navbar = ({ handleNavigation }) => {
                     <span className="close-sidebar" onClick={toggleSidebar}>
                         <RiCloseLine />
                     </span><ul>
-                        <li><a href="">Nos services</a></li>
+                        <Link to="/services" onClick={handleNavigation}><a href="">Nos services</a></Link>
                         <li><a href="">Nos réalisations</a></li>
                         <li><a href="">Formations</a></li>
                         <li><a href="">Produits</a></li>

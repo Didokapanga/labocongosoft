@@ -227,6 +227,11 @@
     display: none;
 }
 
+.projects-item .mobile-item .mobile-desc {
+    color: var(--text);
+}
+
+
 /*******************/
 
 /* Styles de base pour les éléments avant l'animation */
