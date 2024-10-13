@@ -11,24 +11,24 @@ const Navbar = ({ handleNavigation }) => {
     const [showSidebar, setShowSidebar] = useState(false);
 
     const handleScroll = () => {
-        // Vérifie la largeur de l'écran
-        if (window.innerWidth < 600) {
-            return; // Désactiver la fonctionnalité sur les écrans < 600px
-        }
-
         const currentScrollY = window.scrollY;
 
+        // Vérifie si la largeur de l'écran est inférieure à 600px
+        if (window.innerWidth < 600) {
+            // Applique la couleur de fond si le défilement dépasse 592px
+            if (currentScrollY > 592) {
+                setIsScrolled(true);  // Active la classe scrolled
+            } else {
+                setIsScrolled(false); // Désactive la classe scrolled
+            }
+            return;  // Sortir de la fonction si l'écran est < 600px
+        }
+
+        // Autres vérifications pour des écrans plus larges
         if (currentScrollY > lastScrollY) {
             setShowNavbar(false);
         } else {
             setShowNavbar(true);
-        }
-
-        // Vérifier si la position de défilement dépasse 37rem (592px)
-        if (currentScrollY > 592) {
-            setIsScrolled(true);
-        } else {
-            setIsScrolled(false);
         }
 
         setLastScrollY(currentScrollY);

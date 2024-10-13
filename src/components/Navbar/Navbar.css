@@ -96,6 +96,7 @@
     color: #fff;
     font-size: 35px;
     display: none;
+    background-color: none;
 }
 
 /* Style pour le menu latéral */
@@ -163,6 +164,19 @@
 
     .navbar-menu .berger-menu {
         flex: 1;
+        background: none;
+        /* Aucune couleur de fond */
+        outline: none;
+        /* Supprime la bordure par défaut */
+        border: none;
+        /* Supprime les bordures */
+    }
+
+    .navbar-menu .berger-menu:focus,
+    .navbar-menu .berger-menu:active {
+        background: none;
+        /* Désactive la couleur de fond au clic */
+        outline: none;
     }
 }
 
@@ -214,5 +228,12 @@
     .navbar-menu ul {
         gap: 20px;
         font-size: 14px;
+    }
+}
+
+@media (max-width:500px) {
+    .navbar--scrolled {
+        background-color: rgba(24, 44, 97, 0.5);
+        /* Applique le changement uniquement sur les petits écrans */
     }
 }
