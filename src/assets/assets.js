@@ -31,6 +31,7 @@ import uml from './p-uml.png'
 import merise from './p-merise.png'
 import plus from './p-plus.jpg'
 import rdv from './rdv-item.png'
+import arrow from './arrow.png'
 
 export {
     logo,
@@ -65,7 +66,8 @@ export {
     uml,
     merise,
     plus,
-    rdv
+    rdv,
+    arrow
 }
 
 export const formation = [
