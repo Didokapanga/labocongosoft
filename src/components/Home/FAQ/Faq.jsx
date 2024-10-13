@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './Faq.css'
-import { faqData } from '../../../assets/assets';
+import { faqData, rdv } from '../../../assets/assets';
 import { BsChatLeftDotsFill } from 'react-icons/bs';
+import { LuMinus, LuPlus } from 'react-icons/lu';
+import { RiCloseLargeLine } from 'react-icons/ri';
 
 const Faq = () => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -50,7 +52,10 @@ const Faq = () => {
                         <div className="faq-left">
                             {faqData.map((item, index) => (
                                 <div key={index} className="faq-question" onClick={() => toggleAnswer(index)}>
-                                    <h3>{item.question}</h3>
+                                    <div className="faq-qst">
+                                        <h3>{item.question}</h3>
+                                        <span>{activeIndex === index ? <RiCloseLargeLine /> : <LuPlus />}</span>
+                                    </div>
                                     {activeIndex === index && (
                                         <div className="faq-answer">
                                             {item.answer}
@@ -62,10 +67,8 @@ const Faq = () => {
                     </div>
                     <div className="faq-right forme-animated" ref={(el) => serviceItemsRef.current[1] = el}>
                         <div className="faq-cta">
-                            <span>
-                                <BsChatLeftDotsFill />
-                            </span>
-                            <h3>Vous avez une idée en tête ?</h3>
+                            <img src={rdv} alt="" />
+                            <h3 className='faq-text'>Vous avez une idée en tête ?</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita culpa quaerat ut non debitis et nisi doloribus tempora similique dolore.
                             </p>

@@ -99,7 +99,6 @@ const Formations = () => {
                             <li key={index}>
                                 <span className="formation-icon">
                                     <img src={formations.first_logo} alt="" className='blob-item' />
-                                    <img src={formations.two_logo} alt="" className='icon-item' />
                                 </span>
                                 <h3 className="formation-title secondary-text">{formations.title}</h3>
                                 <span className="formation-desc">{formations.desc}</span>
@@ -114,8 +113,8 @@ const Formations = () => {
                     <button onClick={() => scrollTo(2)} className='nav-btn'>3</button>
                     <button onClick={() => scrollTo(3)} className='nav-btn'>4</button>
                     <button onClick={() => scrollTo(4)} className='nav-btn'>5</button>
-                    <button onClick={() => scrollTo(5)} className='nav-btn'>6</button>
-                    <button onClick={() => scrollTo(6)} className='nav-btn'>7</button>
+                    {/* <button onClick={() => scrollTo(5)} className='nav-btn'>6</button>
+                    <button onClick={() => scrollTo(6)} className='nav-btn'>7</button> */}
                 </div>
             </div>
         </div>

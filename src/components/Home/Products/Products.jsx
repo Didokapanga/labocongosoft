@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import "./Products.css"
-import { products } from '../../../assets/assets'
+import { plus, products, web } from '../../../assets/assets'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const Products = () => {
@@ -73,20 +73,24 @@ const Products = () => {
                     </div>
                 </div>
                 <div className="products-card">
-                    <ul ref={productsListRef} >
-                        {products.map((product, index) => (
-                            <li key={index}>
-                                <img src={product.image} alt="" className="item-image" />
-                                <h3 className="item-title">{product.title}</h3>
-                                <p className="item-cat">{product.categorie}</p>
-                                <a href="#" className='products-view forme-animated blob-animated'>Voir</a>
+                    <ul>
+                        <div className="item-card">
+                            <li className='item-1 info-item'>
+                                <img src={plus} alt="" />
                             </li>
-                        ))}
+                            <li className='item-2 info-item'>
+                                <img src={plus} alt="" />
+                            </li>
+                        </div>
+                        <div className="item-card">
+                            <li className='item-3 info-item'>
+                                <img src={plus} alt="" />
+                            </li>
+                            <li className='item-4 info-item'>
+                                <img src={plus} alt="" />
+                            </li>
+                        </div>
                     </ul>
-                    <div className="poducts-button">
-                        <span className="product-btn-before" onClick={scrollLeft}><FaArrowLeft /></span>
-                        <span className="product-btn-after" onClick={scrollRight}><FaArrowRight /></span>
-                    </div>
                 </div>
             </div>
         </div>

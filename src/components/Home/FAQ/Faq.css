@@ -48,13 +48,22 @@
 .faq-question {
     padding: 15px;
     margin-bottom: 10px;
-    border: 1px solid #182C61;
+    border-bottom: 1px solid #182C61;
     color: #182C61;
     cursor: pointer;
-    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
+.faq-question .faq-qst {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-question .faq-qst span {
+    font-size: 25px;
+    transition: 0.s ease-out;
+}
 
 .faq-question h3 {
     font-size: 20px;
@@ -79,8 +88,6 @@
 
 .faq-cta {
     height: 100%;
-    border: 1px solid #182C61;
-    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -96,11 +103,14 @@
 .faq-cta h3 {
     font-size: 20px;
     font-weight: 600;
+    color: #182C61;
+    margin: 0;
 }
 
 .faq-cta p {
     color: #333;
     font-weight: 500;
+    margin: 0;
 }
 
 .faq-cta button {

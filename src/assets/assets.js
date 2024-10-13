@@ -24,7 +24,13 @@ import two from './icon-2.svg'
 import three from './icon-3.svg'
 import imprimante from './imprimante.png'
 import image1 from './img1.svg'
-// import image2 from './img2.png'
+import web from './p-web.png'
+import desktop from './p-desktop.png'
+import sql from './p-sql.png'
+import uml from './p-uml.png'
+import merise from './p-merise.png'
+import plus from './p-plus.jpg'
+import rdv from './rdv-item.png'
 
 export {
     logo,
@@ -53,52 +59,51 @@ export {
     three,
     imprimante,
     image1,
-    // image2
+    web,
+    desktop,
+    sql,
+    uml,
+    merise,
+    plus,
+    rdv
 }
 
 export const formation = [
     {
-        first_logo: logo_C,
-        two_logo: mysql,
+        first_logo: desktop,
         title: 'Formation complets en programmation desktop : C#, Mysqls',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
     },
     {
-        first_logo: logo_C,
-        two_logo: mysql,
+        first_logo: web,
         title: 'Formation complets en programmation desktop : C#, Mysqls',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
     },
     {
-        first_logo: logo_C,
-        two_logo: mysql,
+        first_logo: sql,
         title: 'Formation complets en programmation desktop : C#, Mysqls',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
     },
     {
-        first_logo: logo_C,
-        two_logo: mysql,
+        first_logo: merise,
         title: 'Formation complets en programmation desktop : C#, Mysqls',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
     },
     {
-        first_logo: logo_C,
-        two_logo: mysql,
+        first_logo: uml,
         title: 'Formation complets en programmation desktop : C#, Mysqls',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
     },
-    {
-        first_logo: logo_C,
-        two_logo: mysql,
-        title: 'Formation complets en programmation desktop : C#, Mysqls',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
-    },
-    {
-        first_logo: logo_C,
-        two_logo: mysql,
-        title: 'Formation complets en programmation desktop : C#, Mysqls',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
-    }
+    // {
+    //     two_logo: mysql,
+    //     title: 'Formation complets en programmation desktop : C#, Mysqls',
+    //     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
+    // },
+    // {
+    //     first_logo: logo_C,
+    //     title: 'Formation complets en programmation desktop : C#, Mysqls',
+    //     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab quia necessitatibus dolore cupiditate architecto ad tenetur perspiciatis doloremque. Commodi!',
+    // }
 ]
 
 export const projects = [
@@ -128,6 +133,12 @@ export const projects = [
     },
     {
         image: project_1,
+        name: 'TravelMate',
+        desc: 'Une application mobile qui assiste les voyageurs dans la planification et la gestion de leurs voyages. Elle propose des itinéraires, des conseils de voyage, des alertes météo et des recommandations locales pour chaque destination.',
+        cat: 'Voyage'
+    },
+    {
+        image: computer,
         name: ' EventSphere',
         desc: 'Une plateforme de gestion d’événements permettant de créer, planifier et gérer des événements professionnels ou personnels. L’application offre des options de communication, et de suivi des inscriptions.',
         cat: 'Gestion'

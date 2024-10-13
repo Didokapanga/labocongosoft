@@ -17,8 +17,7 @@ const ContactForm = () => {
     return (
         <div className="agence-form">
             <form onSubmit={handleSubmit}>
-                <p>Décrivez votre projet ou posez votre question ici. Indiquez les aspects importants que nous devrions connaître pour vous fournir la meilleure assistance possible. Plus vous êtes précis, mieux nous pourrons vous assister.
-                </p>
+                <p>Décrivez-nous votre projet ou posez votre question par ici. </p>
                 <div className="form-group">
                     <input
                         type="email"
