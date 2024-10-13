@@ -13,18 +13,22 @@ const Navbar = ({ handleNavigation }) => {
     const handleScroll = () => {
         const currentScrollY = window.scrollY;
 
-        // Vérifie si la largeur de l'écran est inférieure à 600px
         if (window.innerWidth < 600) {
-            // Applique la couleur de fond si le défilement dépasse 592px
             if (currentScrollY > 592) {
-                setIsScrolled(true);  // Active la classe scrolled
+                setIsScrolled(true);
             } else {
-                setIsScrolled(false); // Désactive la classe scrolled
+                setIsScrolled(false);
             }
-            return;  // Sortir de la fonction si l'écran est < 600px
+            return;
         }
 
-        // Autres vérifications pour des écrans plus larges
+        // Écrans > 600px : Gérer l'arrière-plan transparent et coloré
+        if (currentScrollY > 592) {
+            setIsScrolled(true);  // Arrière-plan coloré après 592px
+        } else {
+            setIsScrolled(false);  // Arrière-plan transparent avant 592px
+        }
+
         if (currentScrollY > lastScrollY) {
             setShowNavbar(false);
         } else {
