@@ -9,28 +9,39 @@
 .serviceHero-wrapper {
     display: flex;
     width: 90%;
-    height: 35rem;
+    height: 38rem;
     justify-content: space-between;
     margin-top: 150px;
 }
 
 .service-wrapper .services-card {
-    position: relative;
-    bottom: 150px;
+    width: 90%;
 }
 
 .service-wrapper .services-card li {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
         0 1px 3px rgba(0, 0, 0, 0.08);
-    background: #f1f1f1;
+    /* background: #f1f1f1; */
+}
+
+.service-wrapper .services-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.service-wrapper .services-card p {
+    font-size: 18px;
+    font-size: 600;
+    color: #333;
 }
 
 .service-wrapper .services-card li:hover h3 {
-    color: var(--primary);
+    color: #fff;
 }
 
 .service-wrapper .services-card li:hover p {
-    color: var(--primary);
+    color: #fff;
 }
 
 .service-wrapper .services-card li:hover span {
@@ -70,7 +81,10 @@
 }
 
 .service-wrapper {
-    width: 90%;
+    width: 100%;
+    background: #fdfdfd;
+    display: flex;
+    justify-content: center;
 }
 
 .serviceInfo {
@@ -166,6 +180,23 @@
     height: 150px;
     object-fit: cover;
 }
+
+.primary-text {
+    font-size: 16px;
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+.secondary-text {
+    margin: 5px 0;
+    text-align: start;
+    line-height: 1.5;
+    font-weight: 600;
+    color: var(--primary);
+}
+
 
 @media (max-width:1200px) {
     .serviceHero-left h1 {

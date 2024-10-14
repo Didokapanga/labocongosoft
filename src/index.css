@@ -61,12 +61,6 @@ body::-webkit-scrollbar-track {
   /* Coins arrondis */
 }
 
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -88,7 +82,7 @@ button:hover {
   color: var(--text);
   margin: 0;
   padding: 0;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .secondary-text {

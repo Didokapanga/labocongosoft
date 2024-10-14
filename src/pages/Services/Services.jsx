@@ -15,9 +15,6 @@ const Services = () => {
             <ServicesHeader />
             <ServiceCard />
             <ServiceInfo />
-            <Testimonials />
-            <Agence />
-            <Faq />
             <Footer />
             <Copyright />
         </div>

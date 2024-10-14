@@ -1,0 +1,150 @@
+.process-container {
+    background-color: #fdfdfd;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.progress-header {
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.progress-header p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.process-heading {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.timeline {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 5rem;
+}
+
+.step-number {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid #000;
+    z-index: 1;
+    color: var(--primary);
+}
+
+.step-content-left {
+    position: absolute;
+    width: 40%;
+    left: 0;
+    text-align: right;
+}
+
+.step-content-right {
+    position: absolute;
+    width: 40%;
+    right: 0;
+    text-align: left;
+}
+
+.step-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.step-description {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+.step-line {
+    width: 2px;
+    background-color: #000;
+    height: 80px;
+    position: relative;
+    z-index: 0;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+}
+
+/* Media query to hide the step number and line below 900px */
+@media (max-width: 900px) {
+
+    .step-number,
+    .step-line,
+    .timeline:before {
+        display: none;
+    }
+
+    .progress-header {
+        width: 90%;
+    }
+
+    /* Adjusting the step layout */
+    .step {
+        flex-direction: column;
+        height: auto;
+        /* Adjust height for content */
+        align-items: flex-start;
+        /* Align to the start */
+    }
+
+    .step-content-left,
+    .step-content-right {
+        width: 100%;
+        text-align: center;
+        /* Center-align the text */
+        position: static;
+        /* Allow natural flow of content */
+        margin-bottom: 20px;
+        /* Add some spacing between steps */
+    }
+}
+
+@media (max-width:600px) {
+    .progress-header {
+        width: 90%;
+    }
+}

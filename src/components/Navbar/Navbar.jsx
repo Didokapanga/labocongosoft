@@ -4,7 +4,7 @@ import { logo } from '../../assets/assets';
 import { RiCloseLine, RiMenu4Line } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 
-const Navbar = ({ handleNavigation }) => {
+const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isScrolled, setIsScrolled] = useState(false);
@@ -54,12 +54,12 @@ const Navbar = ({ handleNavigation }) => {
         <nav className={`navbar ${showNavbar ? 'navbar--visible' : 'navbar--hidden'} ${isScrolled ? 'navbar--scrolled' : ''}`}>
             <div className="navbar-content">
                 <div className="navbar-logo">
-                    <Link to="/"><img src={logo} alt="Logo du site" className="logo-img" onClick={handleNavigation} /></Link>
+                    <a href="/"><img src={logo} alt="Logo du site" className="logo-img" /></a>
                 </div>
                 <div className="navbar-menu">
                     <ul>
                         <li>
-                            <Link to="/services" onClick={handleNavigation}><a href="">Nos services</a></Link>
+                            <a href="/services">Nos services</a>
                         </li>
                         <li><a href="">Nos réalisations</a></li>
                         <li><a href="">Formations</a></li>
@@ -73,7 +73,7 @@ const Navbar = ({ handleNavigation }) => {
                     <span className="close-sidebar" onClick={toggleSidebar}>
                         <RiCloseLine />
                     </span><ul>
-                        <Link to="/services" onClick={handleNavigation}><a href="">Nos services</a></Link>
+                        <Link to="/services"><a href="">Nos services</a></Link>
                         <li><a href="">Nos réalisations</a></li>
                         <li><a href="">Formations</a></li>
                         <li><a href="">Produits</a></li>

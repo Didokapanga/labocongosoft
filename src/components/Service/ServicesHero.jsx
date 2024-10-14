@@ -8,7 +8,7 @@ const ServicesHero = () => {
             <div className="serviceHero-wrapper">
                 <div className="serviceHero-left">
                     <h1>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, ullam.
+                        Des Solutions Innovantes pour Vos Besoins Digitalisés.
                     </h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias earum aut officia. Impedit ex a praesentium eveniet, voluptatibus incidunt error dolores non, nihil, omnis blanditiis ducimus quas tempore architecto.
