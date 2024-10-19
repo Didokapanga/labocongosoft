@@ -8,7 +8,7 @@ import 'leaflet/dist/leaflet.css';
 function App() {
 
   return (
-    <Router>
+    <Router basename=''>
       <div className='app'>
         <Navbar />
         <Routes>
