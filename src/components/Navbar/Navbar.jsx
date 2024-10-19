@@ -58,9 +58,13 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-menu">
                     <ul>
-                        <li>
+                        {/* <li>
                             <a href="/services">Nos services</a>
+                        </li> */}
+                        <Link to="/services"> <li>
+                            <a href="">Nos services</a>
                         </li>
+                        </Link>
                         <li><a href="">Nos réalisations</a></li>
                         <li><a href="">Formations</a></li>
                         <li><a href="">Produits</a></li>
